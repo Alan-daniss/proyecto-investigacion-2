@@ -1,0 +1,141 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Black', sans-serif; 
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+.seccion-pantalla-completa {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: all 1.2s ease-out;
+}
+
+
+.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#intro-imagen {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("Imagenes/imagen_principal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contenido-encima{
+	position: absolute;
+	z-index: 10;
+	text-align: center;
+}
+
+.contenido-encima h1{
+	text-shadow: 0px 0px 20px rgba(0,0,0, 0.8);
+}
+
+
+.contenido-encima h1{
+    font-size: 80px; 
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    color: #ff0055;
+    margin: 0;
+    text-shadow: 0 0 20px #ff0055;
+}
+
+.contenido-encima p{
+	color: #ff0055;
+	text-shadow: 0 0 20px #ff0055;
+}
+
+#intro-titulo .subtitulo {
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+#navegacion-principal h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.gta-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.gta-menu li {
+    margin: 10px 0;
+}
+
+.gta-menu a {
+    text-decoration: none; 
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid transparent;
+}
+
+
+.gta-menu a:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    transform: scale(1.1);
+}
+
+
+.portada-info {
+    border: 5px solid #ff0055;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.titulo{
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    color: #40F2FE;
+    margin: 0;
+    text-shadow: 0 0 20px #ff0055;
+}
+
+.titulo{
+	position: relative;
+	color: #ff0055;
+    text-shadow: 0 0 20px #ff0055;
+}
