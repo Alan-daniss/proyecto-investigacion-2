@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -199,4 +202,25 @@ a:active{
 
 .titulo{
     transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+
+.header-fondo {
+    min-height: 60vh; 
+}
+
+
+.seccion-contenido h1, .seccion-contenido h2 {
+    font-size: 2.5rem !important;
+}
+
+
+.seccion-contenido p, .seccion-contenido li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.menu-oculto ul {
+    margin-top: 50px;
+    padding: 0;
 }

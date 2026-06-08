@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth; 
 }
@@ -45,6 +49,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+	background-attachment: scroll;
 }
 
 .contenido-encima{
@@ -138,4 +143,41 @@ h1 {
 	position: relative;
 	color: #ff0055;
     text-shadow: 0 0 20px #ff0055;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem !important;
+        letter-spacing: 5px !important;
+    }
+
+    .contenido-encima h1 {
+        font-size: 3rem !important;
+    }
+
+    #navegacion-principal h2 {
+        font-size: 2rem;
+    }
+
+    .gta-menu a {
+        font-size: 1.2rem;
+        padding: 5px 15px;
+    }
+
+    .seccion-pantalla-completa {
+        padding: 10px;
+    }
+}
+
+
+
+.seccion-contenido, div {
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+
+.titulo {
+    font-size: 2.5rem !important;
 }
