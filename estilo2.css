@@ -224,3 +224,34 @@ a:active{
     margin-top: 50px;
     padding: 0;
 }
+
+
+.menu-oculto ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.seccion-pantalla-completa {
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .header-fondo {
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+    
+    .contenido-encima h1 {
+        font-size: 2.5rem !important; /* Más pequeño para que quepa */
+        letter-spacing: 5px !important;
+    }
+}

@@ -181,3 +181,26 @@ h1 {
 .titulo {
     font-size: 2.5rem !important;
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.seccion-pantalla-completa {
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .header-fondo {
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+    
+    .contenido-encima h1 {
+        font-size: 2.5rem !important; /* Más pequeño para que quepa */
+        letter-spacing: 5px !important;
+    }
+}
